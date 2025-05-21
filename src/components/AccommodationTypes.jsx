@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const accommodationData = [
   {
     title: "Khách sạn",
@@ -19,16 +21,18 @@ const accommodationData = [
 
 const AccommodationTypes = () => (
   <section className="max-w-[1200px] mx-auto px-4 mt-14">
-    <h2 className="font-semibold text-xl mb-6">Tin thiết loại chỗ nghỉ</h2>
+    <h2 className="font-semibold text-xl mb-6">Các chỗ nghỉ ở TP. Hồ Chí Minh mà bạn có thể thích</h2>
     <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
       {accommodationData.map((item, idx) => (
         <div key={idx} className="cursor-pointer rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
-          <img
-            alt={`${item.title} accommodation`}
-            className="w-full h-36 object-cover"
-            src={item.img}
-          />
-          <p className="mt-3 text-base font-semibold px-1">{item.title}</p>
+          <Link>
+            <img
+              alt={`${item.title} accommodation`}
+              className="w-full h-36 object-cover"
+              src={item.img}
+            />
+            <p className="mt-3 text-base font-semibold px-1">{item.title}</p>
+          </Link>
         </div>
       ))}
     </div>

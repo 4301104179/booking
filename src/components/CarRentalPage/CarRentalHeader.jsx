@@ -16,14 +16,6 @@ const CarRentalHeader = () => (
                                 <span>Lưu trú</span>
                             </Link>
                         </li>
-                        <li className="flex items-center space-x-1 cursor-pointer">
-                            <i className="fas fa-plane text-white text-base"></i>
-                            <span>Chuyến bay</span>
-                        </li>
-                        <li className="flex items-center space-x-1 cursor-pointer">
-                            <i className="fas fa-plane-departure text-white text-base"></i>
-                            <span>Chuyến bay + Khách sạn</span>
-                        </li>
                         <li>
                             <button
                                 aria-current="page"
@@ -32,18 +24,6 @@ const CarRentalHeader = () => (
                                 <i className="fas fa-car text-white text-base"></i>
                                 <span>Thuê xe</span>
                             </button>
-                        </li>
-                        <li className="flex items-center space-x-1 cursor-pointer">
-                            <i className="fas fa-map-marker-alt text-white text-base"></i>
-                            <span>Địa điểm tham quan</span>
-                        </li>
-                        <li className="flex items-center space-x-1 cursor-pointer">
-                            <img
-                                alt="Icon TRT"
-                                className="w-5 h-5"
-                                src="https://storage.googleapis.com/a1aa/image/b88a5d95-cd9e-4794-b192-4d59442c3159.jpg"
-                            />
-                            <span>Taxi sân bay</span>
                         </li>
                     </ul>
                 </div>
